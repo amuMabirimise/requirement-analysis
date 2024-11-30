@@ -41,4 +41,70 @@ Requirement Analysis is a cornerstone of the Software Development Lifecycle (SDL
 4. **Ensures Quality and User Satisfaction**  
    By understanding and documenting user needs thoroughly, Requirement Analysis ensures the final product meets or exceeds user expectations, resulting in higher satisfaction and better usability.
 
-Requirement Analysis is essential for delivering a successful software project that aligns with business goals and provides value to stakeholders.
+Requirement Analysis is essential for delivering a successful software project that aligns with business goals and provides value to stakeholders.
+
+## Types of Requirements
+
+In software development, requirements are categorized into two main types: Functional Requirements and Non-functional Requirements. Both are essential to defining the complete behavior of a system but however they different in this way.
+
+### 1. Functional Requirements
+
+Functional Requirements describe what the system should do. They define the system's functionality and behavior in response to specific inputs or conditions.
+
+#### Examples for Booking Management Project:
+- Users should be able to **search for available hotels** based on location, check-in, and check-out dates.
+- The system should allow users to **book a hotel room** and receive a confirmation email.
+- Users should be able to **view the photo gallery** of each hotel, including images of rooms and amenities.
+- The platform should display detailed information about accommodations, such as the **number of bedrooms** and **number of showers** for each option.
+- Administrators should be able to **add, update, or remove hotel listings** from the platform.
+- The system should provide a **payment gateway integration** for processing online transactions.
+
+### 2. Non-functional Requirements
+
+Non-functional Requirements define how the system should perform. They focus on aspects like performance, usability, reliability, and scalability.
+
+#### Examples for Booking Management Project:
+- The system should support **1,000 concurrent users** without performance degradation.
+- Response time for search queries should not exceed **2 seconds**.
+- The platform must
+
+### Acceptance Criteria
+
+Acceptance Criteria (AC) are a set of conditions that a system or feature must satisfy in order to be considered complete and acceptable by stakeholders. They serve as a detailed checklist to ensure that a feature meets both the functional and non-functional expectations defined in the requirements. Acceptance Criteria provide clarity on what constitutes a successful implementation and help guide the development, testing, and validation process.
+
+#### Importance of Acceptance Criteria in Requirement Analysis
+- **Clarity:** Acceptance criteria provide clear and specific conditions that must be met, reducing ambiguity in requirements.
+- **Validation:** They ensure that features are implemented correctly and function as intended, preventing scope creep or misalignment with stakeholder expectations.
+- **Testing:** Acceptance criteria serve as a basis for writing test cases, helping QA teams verify that features are working as expected.
+- **Stakeholder Satisfaction:** They enable stakeholders to review the final implementation and confirm whether it meets their needs before approval or release.
+
+#### Example of Acceptance Criteria for the Checkout Feature in the Booking Management System
+
+The **Checkout** feature allows users to complete their bookings by entering payment details and finalizing their reservation. Below are the acceptance criteria for the Checkout feature:
+
+1. **User Login Requirement:**
+   - The user must be logged in to proceed to checkout.
+   - If the user is not logged in, they should be prompted to sign in or register.
+
+2. **Room Selection:**
+   - The user must have selected at least one room before proceeding to checkout.
+   - The checkout page should display the room details, including the type of room, price, and booking dates.
+
+3. **Payment Details:**
+   - The user must enter valid payment information (credit card, debit card, or digital wallet).
+   - The payment system must validate the payment method and display an error message if the payment fails.
+
+4. **Order Summary:**
+   - The checkout page must display a detailed order summary that includes:
+     - Selected hotel name, room type, number of bedrooms, and number of showers.
+     - Total cost breakdown (room cost, taxes, service fees).
+     - Any available discounts or promotions applied.
+   
+5. **Confirmation Page:**
+   - After a successful payment, the user must be redirected to a confirmation page.
+   - The confirmation page should display a booking reference number, hotel name, check-in/check-out dates, and payment confirmation.
+   - An email confirmation should be sent to the user with booking details.
+
+6. **Error Handling:**
+   - If the payment fails or is declined, the user should see an error message explaining the issue and be prompted to retry with a different payment method.
+   - If a required field (such as payment info) is missing, the system should notify the user and prevent them from proceeding until the missing information is provided.
