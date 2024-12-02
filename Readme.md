@@ -1,129 +1,159 @@
-# Requirement Analysis in Software Development
+# Semantic HTML: Best Practices for Accessibility and SEO
 
-## Introduction
+**Level**: Novice  
+**Weight**: 1  
+**Project Timeline**:
 
-Welcome to the Requirement Analysis repository. This project is dedicated to understanding the process of requirement analysis in software development.
+- **Start**: Dec 1, 2024, 11:00 PM
+- **End**: Dec 8, 2024, 11:00 PM
 
-Requirement analysis is a critical phase in the software development lifecycle (SDLC) where stakeholders' needs are identified, documented, and validated to ensure the successful delivery of a project.
+### Important Details
 
-This repository serves as a guide and resource for learning and implementing effective requirement analysis techniques.
+- **Checker Release**: Dec 1, 2024, 11:00 PM
+- **Manual QA**: Must request manual QA review upon project completion.
+- **Auto Review**: Automatically triggered at the project deadline.
 
-## What is Requirement Analysis?
+---
 
-Requirement Analysis is the process of identifying, documenting, and managing the needs and expectations of stakeholders for a software project. It is a critical phase in the Software Development Lifecycle (SDLC) that bridges the gap between the stakeholders' vision and the technical implementation of a system.
+## Quiz Questions
 
-### Key Activities in Requirement Analysis:
+🎉 **Great! You've completed the quiz successfully! Keep going!**  
+*(Click to show quiz)*
 
-- **Requirement Gathering**: Collecting stakeholder needs through interviews, surveys, and workshops.
-- **Requirement Documentation**: Creating detailed specifications, user stories, and use cases.
-- **Requirement Validation**: Ensuring that the requirements align with stakeholders' needs and are feasible within the project constraints.
+---
 
-## Importance of Requirement Analysis
+## Tasks
 
-Requirement Analysis is a cornerstone of the Software Development Lifecycle (SDLC). It ensures that the development process is guided by a clear understanding of stakeholder needs and expectations. Here are three key reasons why it is critical:
+### 0. Creating a Structured HTML Document Using Semantic Elements
 
-### Defines the Scope of the Project
+**Objective**: Practice structuring a simple HTML document using semantic elements.
 
-Requirement Analysis helps define what the software will and will not do. By establishing a clear scope, it minimizes misunderstandings and prevents scope creep, ensuring the project stays on track.
+1. Create a file: `0-index.html`.
+2. Structure the file:
+   - Include `html` tags with `head` and `body` tags (empty initially).
+   - Inside the `body` tag:
+      - Add a `header` containing a `nav` with at least three links.
+      - Create a `main` section containing an `article`:
+         - Add an `h1` tag for the title and a `section` for content.
 
-### Improves Communication and Collaboration
+      - Add a `footer` with copyright information: `@copyright`.
 
-The process facilitates better communication between stakeholders, developers, and project managers. It ensures everyone involved has a shared understanding of the goals, reducing conflicts and enhancing collaboration.
+3. Ensure the document starts with the `<!DOCTYPE html>` declaration.
 
-### Reduces Risks and Costs
+**Repository**:
 
-Identifying and addressing potential issues during the requirement phase can save significant time and resources. It reduces the risk of project failure by ensuring requirements are feasible, testable, and aligned with business objectives.
+- **GitHub Repository**: `alx-intermediate-frontend`
+- __Directory__: `0x00-semantic_html`
+- **File**: `0-index.html`
 
-### Ensures Quality and User Satisfaction
+---
 
-By understanding and documenting user needs thoroughly, Requirement Analysis ensures the final product meets or exceeds user expectations, resulting in higher satisfaction and better usability.
+### 1. Enhancing HTML Document with Meta Tags and Title for SEO and Accessibility
 
-Requirement Analysis is essential for delivering a successful software project that aligns with business goals and provides value to stakeholders.
+**Objective**: Enhance the structure of the HTML document with meta tags for SEO, accessibility, and responsiveness.
 
-## Why is Requirement Analysis Important?
+1. Copy `0-index.html` into `1-index.html`.
+2. In the `<head>` tag:
+   - Add the `charset="utf-8"` attribute.
+   - Add the following meta tags:
+      - `name="description"` with `content="A blog post about semantic HTML and accessibility practices"`.
+      - `name="keywords"` with `content="HTML, Semantic, Accessibility, Blog, SEO"`.
+      - `name="author"` with your name as the content.
+      - `name="viewport"` with `content="width=device-width, initial-scale=1.0"`.
 
-Requirement Analysis is a cornerstone of the Software Development Lifecycle (SDLC). It ensures that the development process is guided by a clear understanding of stakeholder needs and expectations. Here are three key reasons why it is critical:
+   - Add a `<title>`: `Semantic Html Blog Post`.
 
-- **Defines the Scope of the Project**
-   Requirement Analysis helps define what the software will and will not do. By establishing a clear scope, it minimizes misunderstandings and prevents scope creep, ensuring the project stays on track.
-- **Improves Communication and Collaboration**
-   The process facilitates better communication between stakeholders, developers, and project managers. It ensures everyone involved has a shared understanding of the goals, reducing conflicts and enhancing collaboration.
-- **Reduces Risks and Costs**
-   Identifying and addressing potential issues during the requirement phase can save significant time and resources. It reduces the risk of project failure by ensuring requirements are feasible, testable, and aligned with business objectives.
+**Repository**:
 
-## Types of Requirements
+- **GitHub Repository**: `alx-intermediate-frontend`
+- __Directory__: `0x00-semantic_html`
+- **File**: `1-index.html`
 
-In software development, requirements are categorized into two main types: Functional Requirements and Non-functional Requirements. Both are essential to defining the complete behavior of a system but however they differ in this way.
+---
 
-### 1. Functional Requirements
+### 2. Creating a Blog Post Layout Using Semantic HTML Elements
 
-Functional Requirements describe what the system should do. They define the system's functionality and behavior in response to specific inputs or conditions.
+**Objective**: Apply semantic elements to create a blog post layout.
 
-#### Examples for Booking Management Project:
+1. Copy `1-index.html` into `2-index.html`.
+2. In the `<header>` tag:
+   - Add an `h1` with `My Blog`.
+   - Add a `nav` containing a `ul` with three `li` elements:
+      - Links: `Home`, `About`, and `Contact`.
 
-- Users should be able to search for available hotels based on location, check-in, and check-out dates.
-- The system should allow users to book a hotel room and receive a confirmation email.
-- Users should be able to view the photo gallery of each hotel, including images of rooms and amenities.
-- The platform should display detailed information about accommodations, such as the number of bedrooms and number of showers for each option.
-- Administrators should be able to add, update, or remove hotel listings from the platform.
-- The system should provide a payment gateway integration for processing online transactions.
+3. In the `article` inside the `main` tag:
+   - Add a `header` with an `h2`: `Understanding Semantic Html`.
+   - Add a `p`: `Published on <time datetime="2024-09-10">September 10</time>`.
+   - Add sections:
+      - Section 1:
+         - `h3`: `Introduction`.
+         - `p`: Semantic HTML helps improve the accessibility and SEO of your website. In this post, we’ll explore its benefits and how to implement it.
 
-### 2. Non-functional Requirements
+      - Section 2:
+         - `h3`: `Main Content`.
+         - `p`: Using elements like `<article>`, `<section>`, and `<header>` ensures that both users and search engines can better understand the structure and content of a webpage.
+         - Add a `figure`:
+            - `img` with an `alt`: `example`.
+            - `figcaption`: `An illustration of semantic HTML elements`.
 
-Non-functional Requirements define how the system should perform. They focus on aspects like performance, usability, reliability, and scalability.
+      - Section 3:
+         - `h3`: `Conclusion`.
+         - `p`: By adopting semantic HTML, you enhance your site's accessibility, improve SEO, and make the content easier to navigate.
 
-#### Examples for Booking Management Project:
+   - Add a `footer` with:
+      - `p`: `Written by <name>`.
+      - `p`: `Published on 2024-09-11`.
 
-- The system should support 1,000 concurrent users without performance degradation.
-- Response time for search queries should not exceed 2 seconds.
-- The platform must be mobile-responsive and provide a seamless user experience across devices.
+**Repository**:
 
-## Acceptance Criteria
+- **GitHub Repository**: `alx-intermediate-frontend`
+- __Directory__: `0x00-semantic_html`
+- **File**: `2-index.html`
 
-Acceptance Criteria (AC) are a set of conditions that a system or feature must satisfy in order to be considered complete and acceptable by stakeholders. They serve as a detailed checklist to ensure that a feature meets both the functional and non-functional expectations defined in the requirements. Acceptance Criteria provide clarity on what constitutes a successful implementation and help guide the development, testing, and validation process.
+---
 
-### Importance of Acceptance Criteria in Requirement Analysis
+### 3. Enhancing Form Accessibility with ARIA Roles and Attributes
 
-- **Clarity**: Acceptance criteria provide clear and specific conditions that must be met, reducing ambiguity in requirements.
-- **Validation**: They ensure that features are implemented correctly and function as intended, preventing scope creep or misalignment with stakeholder expectations.
-- **Testing**: Acceptance criteria serve as a basis for writing test cases, helping QA teams verify that features are working as expected.
-- **Stakeholder Satisfaction**: They enable stakeholders to review the final implementation and confirm whether it meets their needs before approval or release.
+**Objective**: Implement ARIA roles to improve accessibility in a form.
 
-### Example of Acceptance Criteria for the Checkout Feature in the Booking Management System
+1. Copy `2-index.html` into `3-index.html`.
+2. Inside the `<main>` tag, add a new `<section>` with a `<form>`:
+   - Attributes:
+      - `action="#"`
+      - `method="POST"`
+      - `aria-labelledby="form-title"`
+      - `role="form"`
 
-The Checkout feature allows users to complete their bookings by entering payment details and finalizing their reservation. Below are the acceptance criteria for the Checkout feature:
+3. Inside the `<form>`:
+   - Add a `div` with:
+      - `label` for `"name"`.
+      - `input` attributes:
+         - `type="text"`, `id="name"`, `name="name"`, `aria-required="true"`.
 
-- **User Login Requirement**:
+   - Add a second `div` with:
+      - `label` for `"email"`.
+      - `input` (similar attributes as the above but for `"email"`).
 
-   - The user must be logged in to proceed to checkout.
-   - If the user is not logged in, they should be prompted to sign in or register.
+   - Add a third `div` with:
+      - `button` attributes:
+         - `type="submit"`, `aria-label="Submit the form"`.
 
-- **Room Selection**:
+   - Add a fourth `div` with:
+      - `aria-live="polite"` and `role="alert"`.
 
-   - The user must have selected at least one room before proceeding to checkout.
-   - The checkout page should display the room details, including the type of room, price, and booking dates.
+**Repository**:
 
-- **Payment Details**:
+- **GitHub Repository**: `alx-intermediate-frontend`
+- __Directory__: `0x00-semantic_html`
+- **File**: `3-index.html`
 
-   - The user must enter valid payment information (credit card, debit card, or digital wallet).
-   - The payment system must validate the payment method and display an error message if the payment fails.
+---
 
-- **Order Summary**:
+### 4. Manual Review
 
-   - The checkout page must display a detailed order summary that includes:
-      - Selected hotel name, room type, number of bedrooms, and number of showers.
-      - Total cost breakdown (room cost, taxes, service fees).
-      - Any available discounts or promotions applied.
+**Mandatory**: Submit your project for manual QA review after completion.
 
-- **Confirmation Page**:
+**Repository**:
 
-   - After a successful payment, the user must be redirected to a confirmation page.
-   - The confirmation page should display a booking reference number, hotel name, check-in/check-out dates, and payment confirmation.
-   - An email confirmation should be sent to the user with booking details.
-
-- **Error Handling**:
-
-   - If the payment fails or is declined, the user should see an error message explaining the issue and be prompted to retry with a different payment method.
-   - If a required field (such as payment info) is missing, the system should notify the user and prevent them from proceeding until the missing information is provided.
-
-![Requirement Analysis Process](path/to/your/image.png)
+- **GitHub Repository**: `alx-intermediate-frontend`
+- __Directory__: `0x00-semantic_html`
